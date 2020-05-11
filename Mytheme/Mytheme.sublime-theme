@@ -153,6 +153,26 @@
             "settings": ["bold_folder_labels"],
             "font.bold": true
         },
+        {
+            "class": "sidebar_label",
+            "parents": [{"attributes":["untracked"]}],
+            "fg": ["background", 0, 177, 89, 1.0]
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"attributes":["untracked", "selected"]}],
+            "fg": ["background", 0, 177, 89, 1.0]
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"attributes":["modified"]}],
+            "fg": ["background", 255, 196, 37, 1.0]
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"attributes":["modified", "selected"]}],
+            "fg": ["background", 255, 196, 37, 1.0]
+        },
         // Open Files Icons
         {
             "class": "close_button",
@@ -298,7 +318,7 @@
             "parents": [{"class": "file_system_entry", "attributes": ["untracked"]}],
             "layer0.texture": "Theme - Default/common/status_untracked.png",
             "layer0.tint": "color(var(--background) blend(rgb(255, 255, 255) 60%))",
-            "layer0.opacity": 1.0,
+            "layer0.opacity": 0,
             "content_margin": 6
         },
         {
@@ -309,7 +329,7 @@
             ],
             "layer0.texture": "Theme - Default/common/status_untracked.png",
             "layer0.tint": "color(var(--background) blend(rgb(0, 0, 0) 60%))",
-            "layer0.opacity": 1.0,
+            "layer0.opacity": 0,
             "content_margin": 6
         },
         {
@@ -317,7 +337,7 @@
             "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
             "layer0.texture": "Theme - Default/common/status_modified.png",
             "layer0.tint": "color(var(--bluish) min-contrast(var(--background) 2.5))",
-            "layer0.opacity": 1.0,
+            "layer0.opacity": 0,
             "content_margin": 6
         },
         {
