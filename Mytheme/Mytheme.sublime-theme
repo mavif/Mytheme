@@ -293,8 +293,8 @@
         },
         {
             "class": "icon_file_type",
-            "layer0.opacity": 0.5,
-            "content_margin": [9, 8]
+            "layer0.opacity": 1,
+            "content_margin": -2
         },
         {
             "class": "icon_file_type",
